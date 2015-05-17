@@ -9,8 +9,8 @@ class nrpe::params {
 
     $firewall_manage = true
 
-    $config = '/etc/nagios/nrpe.conf'
-    $config_template = 'nrpe/nrpe.conf.erb'
+    $config = '/etc/nagios/nrpe.cfg'
+    $config_template = 'nrpe/nrpe.cfg.erb'
 
     case $::osfamily {
         'RedHat': {
