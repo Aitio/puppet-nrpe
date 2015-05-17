@@ -57,6 +57,13 @@ class nrpe(
     validate_array($allowed_hosts)
     validate_hash($commands)
 
+    if empty($allowed_hosts) {
+        fail("Must specify one or more allowed_hosts.")
+    }
+    if empty($commands) {
+        fail("Must specify one or more commands.")
+    }
+
     # Ensure proper processing order.
     anchor { 'nrpe::begin': } ->
     class { '::nrpe::install': } ->

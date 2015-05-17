@@ -8,7 +8,7 @@
   "issues_url": "https://github.com/aitio/puppet-nrpe/issues",
   "project_page": "https://forge.puppetlabs.com/aitio/nrpe",
   "dependencies": [
-    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+    {"version_requirement":">= 4.6.0","name":"puppetlabs-stdlib"}
     {"version_requirement":">= 1.5.0","name":"puppetlabs-firewall"}
   ]
 }
